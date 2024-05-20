@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Memento Mori
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre
 
-## Available Scripts
+**Memento Mori** é um conceito do latim que significa "lembre-se da morte". Ele é usado para lembrar as pessoas da sua mortalidade e para incentivá-las a viver uma vida plena e significativa. Este projeto é uma aplicação web que permite aos usuários visualizar quantas semanas de vida já viveram e quantas semanas ainda têm, com base na data de nascimento e na expectativa de vida.
 
-In the project directory, you can run:
+## Tecnologias Usadas
 
-### `npm start`
+Este projeto utiliza as seguintes tecnologias:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Uma biblioteca JavaScript para a construção de interfaces de usuário.
+- **Tailwind CSS**: Um framework CSS para estilização rápida e responsiva.
+- **Local Storage**: Para armazenar os dados do usuário no navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- **Entrada de Data**: Os usuários podem inserir sua data de nascimento e a data estimada de morte.
+- **Cálculo de Semanas**: A aplicação calcula o número total de semanas de vida e quantas já foram vividas.
+- **Armazenamento Local**: As datas inseridas são salvas no Local Storage para que estejam disponíveis na próxima visita do usuário.
+- **Tema Escuro**: Suporte ao modo claro e escuro, adaptado às preferências do sistema do usuário.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Rodar o Projeto
 
-### `npm run build`
+Para rodar este projeto localmente, siga os seguintes passos:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js e npm instalados em sua máquina.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Passo a Passo
 
-### `npm run eject`
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/memento-mori.git
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd memento-mori
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Abra o navegador e acesse:
+    ```plaintext
+    http://localhost:3000
+    ```
 
-## Learn More
+## Contribuindo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir com o projeto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature ou correção de bug:
+    ```bash
+    git checkout -b minha-feature
+    ```
+3. Faça as alterações necessárias no código.
+4. Commit suas alterações:
+    ```bash
+    git commit -m 'Minha nova feature'
+    ```
+5. Envie para o repositório remoto:
+   

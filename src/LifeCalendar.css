@@ -1,0 +1,23 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(52, 10px);
+    grid-gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .week {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease; /* Adicionado para suavizar a transição */
+  }
+  
+  .lived {
+    background-color: #3498db;
+  }
+  
+  .not-lived {
+    background-color: #ecf0f1;
+  }
+  
