@@ -54,7 +54,7 @@ function App() {
               className="mt-1 p-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
           </label>
-          <label className="flex flex-col items-start">
+          <label className="flex flex-col items-start relative">
             <span>Data <strong>Estimada</strong> de Morte:</span>
             <input
               type="date"
@@ -62,6 +62,9 @@ function App() {
               onChange={(e) => setExpectedEndDate(e.target.value)}
               className="mt-1 p-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
+            <div className="hover-text hidden absolute top-full left-0 mt-1 p-2 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 rounded-md shadow-md">
+              É só uma expectativa, ok!
+            </div>
           </label>
         </div>
         <button type="submit" className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
@@ -70,8 +73,8 @@ function App() {
       </form>
       <LifeCalendar weeksLived={weeksLived} totalWeeks={totalWeeks} />
       <div className="summary mt-8 text-lg">
-        <p>Total de semanas: {totalWeeks}</p>
-        <p>Semanas vividas: {weeksLived} ({percentageLived}%)</p>
+        <p>Total de semanas de vida: {totalWeeks}</p>
+        <p>Semanas já vividas: {weeksLived} ({percentageLived}%)</p>
       </div>
     </div>
   );

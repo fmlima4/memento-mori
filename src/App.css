@@ -19,3 +19,12 @@ button {
   margin-top: 20px;
   font-size: 1.2em;
 }
+
+/* Estilo para mostrar o texto apenas quando hover */
+.hover-text {
+  display: none;
+}
+
+label:hover .hover-text {
+  display: block;
+}
