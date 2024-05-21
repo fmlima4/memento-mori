@@ -40,6 +40,8 @@ function App() {
 
   const percentageLived = totalWeeks > 0 ? ((weeksLived / totalWeeks) * 100).toFixed(2) : 0;
 
+  const isFormValid = birthDate !== '' && expectedEndDate !== '';
+
   return (
     <div className="App min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 py-8">
       <h1 className="text-5xl font-bold mb-8" style={{ fontFamily: 'Dancing Script, cursive' }}>Memento Mori</h1>
@@ -67,7 +69,11 @@ function App() {
             </div>
           </label>
         </div>
-        <button type="submit" className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+        <button
+          type="submit"
+          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
+          disabled={!isFormValid}
+        >
           Calcular
         </button>
       </form>
