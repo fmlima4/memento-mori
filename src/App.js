@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 py-8">
-      <h1 className="text-4xl font-bold mb-8">Memento Mori</h1>
+      <h1 className="text-5xl font-bold mb-8" style={{ fontFamily: 'Dancing Script, cursive' }}>Memento Mori</h1>
       <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
         <div className="flex flex-wrap justify-center space-x-4">
           <label className="flex flex-col items-start">
@@ -55,7 +55,7 @@ function App() {
             />
           </label>
           <label className="flex flex-col items-start">
-            <span>Data Estimada de Morte:</span>
+            <span>Data <strong>Estimada</strong> de Morte:</span>
             <input
               type="date"
               value={expectedEndDate}
