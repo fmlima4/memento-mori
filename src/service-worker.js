@@ -39,6 +39,7 @@ self.addEventListener('fetch', event => {
     event.waitUntil(
       caches.keys().then(cacheNames => {
         return Promise.all(
+          // eslint-disable-next-line array-callback-return
           cacheNames.map(cacheName => {
             if (cacheName !== CACHE_NAME) {
               return caches.delete(cacheName);
